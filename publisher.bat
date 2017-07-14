@@ -1,4 +1,5 @@
 @echo off 
+echo Copying files...
 set copied=0
 set omitted=0
 for /r %1 %%a in (*) do (
@@ -10,3 +11,4 @@ for /r %1 %%a in (*) do (
 	)
 ) 
 echo Files copied: %copied%; Omitted: %omitted%
+pause
